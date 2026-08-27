@@ -14,7 +14,16 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="assets/js/app.js" defer></script>
 </head>
-<body>
+<body class="is-loading">
+  <div class="intro-loader" id="intro-loader" role="status" aria-label="Preparando protecci?n remota">
+    <div class="intro-loader__orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="intro-loader__brand">
+      <img src="assets/img/ing-logo-full-dark.png" alt="ING">
+      <span>PROTECCI?N REMOTA</span>
+    </div>
+    <p>Preparando un entorno seguro</p>
+    <div class="intro-loader__track" aria-hidden="true"><b></b></div>
+  </div>
   <header class="header">
     <div class="container header__inner">
       <a class="brand" href="#inicio" aria-label="Inicio ING Protección Remota">

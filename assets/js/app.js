@@ -148,7 +148,20 @@
     });
   }
 
+
+  function initIntro() {
+    var intro = document.getElementById('intro-loader');
+    if (!intro) return;
+    var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.setTimeout(function () {
+      intro.classList.add('is-leaving');
+      document.body.classList.remove('is-loading');
+      window.setTimeout(function () { intro.remove(); }, reducedMotion ? 220 : 900);
+    }, reducedMotion ? 350 : 1550);
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
+    initIntro();
     initCases();
     initMenu();
     initReveal();
