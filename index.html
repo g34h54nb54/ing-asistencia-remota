@@ -11,8 +11,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/app.js" defer></script>
+  <style>
+    body.is-loading{overflow:hidden}
+    .intro-loader{position:fixed!important;inset:0!important;z-index:99999!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;background:#07090e!important;color:#fff!important;overflow:hidden!important}
+    .intro-loader__brand{display:flex!important;flex-direction:column!important;align-items:center!important;gap:18px!important;position:relative;z-index:2}
+    .intro-loader__brand img{width:min(360px,70vw)!important;height:auto!important;max-height:none!important;object-fit:contain!important}
+    .intro-loader__brand span{font:800 11px/1.2 Inter,system-ui,sans-serif;letter-spacing:.3em;color:#9ca5b2}
+    .intro-loader>p{position:relative;z-index:2;margin:28px 0 0!important;font:400 14px/1.5 Inter,system-ui,sans-serif;color:#c7ccd4}
+    .intro-loader__track{position:relative;z-index:2;width:min(280px,60vw);height:2px;margin-top:20px;background:rgba(255,255,255,.09);overflow:hidden}
+    .intro-loader__track b{display:block;width:100%;height:100%;background:#ff6200;animation:critical-progress 1.35s ease forwards;transform-origin:left}
+    .intro-loader__orbit{position:absolute!important;inset:50% auto auto 50%!important;width:min(580px,88vw)!important;aspect-ratio:1;transform:translate(-50%,-50%);pointer-events:none}
+    @keyframes critical-progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  </style>
+  <link rel="stylesheet" href="assets/css/styles.css?v=3">
+  <script src="assets/js/app.js?v=3" defer></script>
 </head>
 <body class="is-loading">
   <div class="intro-loader" id="intro-loader" role="status" aria-label="Preparando protecci?n remota">
